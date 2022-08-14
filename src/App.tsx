@@ -19,7 +19,7 @@ const App = () => {
           <Header />
           <Suspense fallback="loading...">
             <Routes>
-              <Route path="/" element={<Countries />} />
+              <Route path="/countries" element={<Countries />} />
               <Route path="/countries/:countryId" element={<Country />} />
             </Routes>
           </Suspense>
