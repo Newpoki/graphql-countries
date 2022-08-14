@@ -1,4 +1,3 @@
-// this is recommended config on docs
 {
   "plugins": ["relay"]
 }
