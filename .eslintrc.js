@@ -9,6 +9,7 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react/jsx-runtime",
+    "plugin:react-hooks/recommended",
   ],
   overrides: [],
   parser: "@typescript-eslint/parser",
@@ -18,4 +19,9 @@ module.exports = {
   },
   plugins: ["react", "@typescript-eslint"],
   rules: {},
+  settings: {
+    react: {
+      version: "detect",
+    },
+  },
 };

@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 module.exports = {
   src: "./src",
   language: "typescript", // "javascript" | "typescript" | "flow"

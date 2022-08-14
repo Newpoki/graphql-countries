@@ -1,5 +1,6 @@
-// your-app-name/src/fetchGraphQL.js
-export async function fetchGraphQL(text: string, variables: any) {
+import { RequestParameters, Variables } from "relay-runtime";
+
+export async function fetchGraphQL(text: RequestParameters["text"], variables: Variables) {
   // Fetch data from GitHub's GraphQL API:
   const response = await fetch("https://countries.trevorblades.com", {
     method: "POST",
