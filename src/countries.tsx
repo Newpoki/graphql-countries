@@ -1,8 +1,6 @@
 import { Country } from "./Country";
 
-type ICountriesProps = {};
-
-export const Countries = ({}: ICountriesProps) => {
+export const Countries = () => {
   return (
     <div>
       <Country />

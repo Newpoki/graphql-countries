@@ -1,5 +1,5 @@
 import "./App.css";
-import { RelayEnvironmentProvider, loadQuery, usePreloadedQuery } from "react-relay/hooks";
+import { RelayEnvironmentProvider } from "react-relay/hooks";
 import relayEnvironment from "./relay-environment";
 import { Countries } from "./countries";
 
