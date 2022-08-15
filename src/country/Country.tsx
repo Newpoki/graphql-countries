@@ -28,9 +28,6 @@ const CountryQuery = graphql`
       }
       emoji
       emojiU
-      states {
-        code
-      }
     }
   }
 `;
@@ -87,14 +84,23 @@ export const Country = () => {
           <CountryLink href={`https://wikipedia.org/wiki/${country?.name}`}>
             {country?.name}
           </CountryLink>
+
           <Typography sx={styles.label}>Phone indicator</Typography>
           <Typography align="right">+{country?.phone}</Typography>
+
           <Typography sx={styles.label}>Capital</Typography>
           <CountryLink href={`https://wikipedia.org/wiki/${country?.capital}`}>
             {country?.capital}
           </CountryLink>
+
+          <Typography sx={styles.label}>Continent</Typography>
+          <CountryLink href={`https://wikipedia.org/wiki/${country?.continent?.name}`}>
+            {country?.continent?.name}
+          </CountryLink>
+
           <Typography sx={styles.label}>Currency</Typography>
           <Typography align="right">{country?.currency}</Typography>
+
           <Typography sx={styles.label}>Languages</Typography>
           <Typography align="right">
             {country?.languages.map((language) => (
